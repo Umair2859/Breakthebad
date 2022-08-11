@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Overview">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text=" Why We Do What We Do In Life And Business"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar4"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar4"
+        app:layout_constraintVertical_bias="0.432" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:gravity="top"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar4">
+
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#F5F5F5"
+                android:lineSpacingExtra="12sp"
+                android:text="Charles Duhigg, award-winning business reporter for The New York Times, takes us to the thrilling edge of scientific discoveries that explain why habits exist and how they can be changed. By distilling vast amounts of information into engrossing narratives, Duhigg brings to light a whole new understanding of human nature and its potential for transformation."
+                android:textColor="@color/red"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#F5F5F5"
+                android:lineSpacingExtra="12sp"
+                android:text="This platform will help in following areas"
+                android:textColor="@color/red"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="317dp"
+                android:layout_height="1dp"
+                android:background="#F5F5F5" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#F5F5F5"
+                android:lineSpacingExtra="12sp"
+                android:text="–How cravings create and power new habits.\n–How to apply the golden rule of habit change.\n–Why the brain tries to make routines into habits."
+                android:textColor="@color/red"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#F5F5F5"
+                android:lineSpacingExtra="12sp"
+                android:text="Overview"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="80dp"
+                android:layout_height="1dp"
+                android:background="#F5F5F5" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#F5F5F5"
+                android:lineSpacingExtra="12sp"
+                android:text="When you woke up this morning, what did you do first? Did you hop in the shower, check your email or grab a doughnut from the kitchen counter? Did you brush your teeth before or after you toweled off? Which route did you drive to work? When you got home, did you put on your sneakers and go for a run, or pour yourself a drink and eat dinner in front of the TV?  “All our life, so far as it has definite form, is but a mass of habits,” William James wrote in 1892. Most of the choices we make each day may feel like the products of well-considered decision making, but they’re not. They’re habits. And though each habit means relatively little on its own, over time, the meals we order, whether we save or spend, how often we exercise, and the way we organize our thoughts and work routines have enormous impacts on our health, productivity, financial security and happiness. One paper published by a Duke University researcher in 2006 found that more than 40 percent of the actions people performed each day weren’t actual decisions, but habits."
+                android:textColor="@color/red"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:foregroundGravity="center"
+                android:gravity="center|center_vertical"
+                android:onClick="take"
+                android:text="Next"
+                app:backgroundTint="@color/red" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
